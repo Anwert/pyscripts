@@ -35,3 +35,5 @@ os.system("dotnet build -c:Release -v:q " + proj_path)
 
 # копируем сбилженные файлы .nupkg в нужную папку
 do_with_nupkg(bin, shutil.copy2, NUGET_PATH)
+
+print("Rebuild succeeded")
